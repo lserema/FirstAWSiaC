@@ -1,0 +1,8 @@
+version: '3.8'
+
+services: # defining service/s
+  web: # name of the service
+    image: heroku/nodejs-hello-world # image named given
+    build: . # directory what to build, here it is root directory
+    ports:
+      - "8080:8080" # defining port for our app

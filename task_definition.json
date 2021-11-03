@@ -1,0 +1,17 @@
+[
+  {
+    "essential": true,
+    "memory": 512,
+    "name": "xchange-worker",
+    "cpu": 512,
+    "image": "heroku/nodejs-hello-world",
+    "networkMode": "awsvpc",
+    "environment": [],
+    "portMappings": [
+      {
+        "containerPort": 3000,
+        "hostPort": 3000
+      }
+    ]
+  }
+]
